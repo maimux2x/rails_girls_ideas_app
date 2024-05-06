@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root to: redirect("/ideas")
+  root "pages#homepage"
+  get 'pages/about'
   resources :ideas
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
