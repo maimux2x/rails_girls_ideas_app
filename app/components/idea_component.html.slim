@@ -1,0 +1,7 @@
+.col-md-4
+  - if @idea.picture.present?
+    = image_tag @idea.picture_url, width: '100%'
+  h4
+    = link_to @idea.name, @idea
+  = @idea.description
+

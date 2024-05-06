@@ -4,7 +4,7 @@ h1 Ideas
 
 #ideas
   - @ideas.each do |idea|
-    = render idea
+    = render(IdeaComponent.new(idea: idea))
     p
       = link_to "Show this idea", idea
 
